@@ -783,7 +783,7 @@ class Binding(NamedObject):
             ref = qualify(mn, self.root, definitions.tns)
             message = definitions.messages.get(ref)
             if message is None:
-                # WG - ignore ReplyTo headers.. 
+                # WG - ignore ReplyTo headers..
                 # raise Exception("message '%s', not-found" % (mn,))
                 continue
             pn = header.part
